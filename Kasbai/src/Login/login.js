@@ -41,9 +41,9 @@ export default class Login extends Component {
             <TouchableOpacity disabled={this.state.isLoading} style={styles.buttonContainer} onPress={() => this.handleAuthorize()}>
               <Text style={{ fontSize: 20, color: 'white' }}>Login</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.buttonContainerPrivacyPolicy} onPress={() => Linking.openURL(policy)}>
+            {/* <TouchableOpacity style={styles.buttonContainerPrivacyPolicy} onPress={() => Linking.openURL(policy)}>
               <Text style={{ fontSize: 10, color: 'green' }}>Terms and Conditions</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
             <TouchableOpacity style={styles.buttonContainerPrivacyPolicy} onPress={() => this.support()}>
               <Text style={{ fontSize: 10, color: 'black'}}>Trouble logging in</Text>
             </TouchableOpacity>
